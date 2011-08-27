@@ -1,0 +1,107 @@
+%Un site pour personnaliser son latex : http://www.schneeflocke.net/index.php?section=latex/index
+
+% Tout ce qui est compris entre le caractère % et une fin de ligne est un
+% commentaire ignor\'{e} par LaTeX
+
+%iconv -f utf8 -t latin1 fichier.tex > fichier-iso.tex
+
+% Un fichier LaTeX commence par une commande \documentclass qui d\'{e}clare le type
+% de document
+
+\documentclass[10.5pt]{article}
+
+\usepackage[french]{babel} % Pour adopter les règles de typographie fran\c{c}aise
+
+%\usepackage[T1]{fontenc} % Pour que LaTeX comprenne les caractères accentu\'{e}s ;
+                         % norme iso-8859, cela risque de ne pas marcher avec
+                         % des fichiers cr\'{e}\'{e}s sous windows
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{amsmath} % Les biblioth\`{e}ques LaTeX de l'American
+                     % Mathematical Society sont pleines de macros
+                     % int\'{e}ressantes (voire indispensables).
+\usepackage{graphics}
+\usepackage[pdftex]{graphicx} 
+\usepackage[]{graphicx}
+\definecolor{perso}{RGB}{30,30,160}
+
+\newcommand{\promille}{\def\pourmille{\hbox{$\,^0\!/_{00}$}}}
+
+\definecolor{jauneboite}{RGB}{244,232,168}
+\makeatletter\newenvironment{boite}{%
+   \begin{lrbox}{\@tempboxa}\begin{minipage}{0.9 \linewidth}}{\end{minipage}\end{lrbox}%
+   \colorbox{jauneboite}{\usebox{\@tempboxa}}
+}\makeatother
+
+
+%\newenvironment{boite}{%
+%\colorbox[RGB]{244,232,170}{
+%\begin{minipage}{\linewidth}
+%}%
+%{%
+%\end{minipage}}
+%}
+
+
+\begin{document}
+
+%\addtolength{\textheight}{50pt}
+%\newenvironment{changemargin}[2]{\begin{list}{}{
+%\setlength{\leftmargin}{0pt}
+%\setlength{\rightmargin}{0pt}
+%\addtolength{\leftmargin}{#1}
+%\addtolength{\rightmargin}{#2}
+%}\item }{\end{list}}
+
+%\begin{changemargin}{-1.8 cm}{-1.8 cm}
+
+%\begin{multicols}{2}
+%\end{multicols}
+
+\begin{center}
+\textsc{Thème 1 -- La Terre dans l'Univers, la vie et l'évolution du vivant : une planète habitée} \\
+~~ \\
+\Large{\textbf{Chapitre 1 -- Les conditions de la vie :}} \\
+\Large{\textbf{une particularité de la Terre ?}}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|*{2}{l|}c|}
+\hline
+Plan du chapitre & Je dois être capable de : & Autoévaluation \\ \hline
+& & \\
+\textbf{\large{I- La Terre dans le système solaire}} &  &  \\
+& $\oplus$ donner la définition de : & :-)  \quad \quad  :-/ \quad \quad  :-(  \\
+1- L'organisation du système solaire & système solaire, étoile, planète rocheuse, & \\
+& planète gazeuse, astéroïde, comète & \\
+2- Les différents objets du système solaire & & \\
+& $\oplus$ schématiser le système solaire & :-)  \quad \quad  :-/ \quad \quad  :-(  \\
+& à l'échelle & \\
+& & \\
+& & \\ \hline 
+& & \\
+\textbf{\large{II- La Terre, une planète habitable}} & & \\ 
+\textbf{\large{et habitée}} & & \\
+& $\oplus$ citer les caractéristiques de la Terre & :-)  \quad \quad  :-/ \quad \quad  :-(  \\
+1- Les conditions de la Terre sont favorables &  qui permettent la présence de la vie &  \\
+à la vie & & \\
+& $\oplus$ les relier à sa place dans le système & :-)  \quad \quad  :-/ \quad \quad  :-(  \\ 
+2- D'autres planètes habitées ? & solaire & \\
+& & \\
+& $\oplus$ discuter des arguments d'une possible & :-)  \quad \quad  :-/ \quad \quad  :-(  \\ 
+& vie sur d'autres planètes & \\
+& & \\ \hline
+\end{tabular}
+\end{center}
+
+%ligne courante du texte
+%\begin{minipage}[t]{4cm}
+%:-)  :-/  :-( 
+%\end{minipage}
+
+%$\ddot\smile$
+
+%\end{changemargin}
+\end{document}
